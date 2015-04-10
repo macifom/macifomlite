@@ -13,4 +13,4 @@ The latest version of Macifomlite features:
 
 ## About our License
 
-The Macifomlite sources are provided under the MIT License, but embeds Shay Green's Nes_snd_emu library which is licensed under the GNU LGPL. See http://www.slack.net/~ant/libs/audio.html for details and visit http://www.gnu.org/licenses/lgpl.html for a copy of the LGPL License. Macifomlite also includes Stuart Carnie's MIT Licensed iCade reader library.
+Macifomlite is provided under the MIT License, but embeds Shay Green's Nes_snd_emu library which is licensed under the GNU LGPL. See http://www.slack.net/~ant/libs/audio.html for details and visit http://www.gnu.org/licenses/lgpl.html for a copy of the LGPL License. Macifomlite also includes Stuart Carnie's MIT Licensed iCade reader library.
