@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* macifomliteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* macifomliteAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		B91D39DA12499D6D00EC0B6A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91D39D912499D6D00EC0B6A /* OpenGLES.framework */; };
+		B91FA08F15B0C9DC000F9B17 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B91FA08D15B0C9DC000F9B17 /* iCadeReaderView.m */; };
+		B925F84E1538CA57006148BC /* NESPlayfieldGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B925F84C1538CA57006148BC /* NESPlayfieldGLKViewController.m */; };
+		B925F8511538CFE5006148BC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B925F8501538CFE5006148BC /* GLKit.framework */; };
+		B936AD05154737AE00BC356A /* apu_snapshot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACEE154737AE00BC356A /* apu_snapshot.cpp */; };
+		B936AD06154737AE00BC356A /* Blip_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACF2154737AE00BC356A /* Blip_Buffer.cpp */; };
+		B936AD07154737AE00BC356A /* Multi_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACF9154737AE00BC356A /* Multi_Buffer.cpp */; };
+		B936AD08154737AE00BC356A /* Nes_Apu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACFB154737AE00BC356A /* Nes_Apu.cpp */; };
+		B936AD09154737AE00BC356A /* Nes_Namco.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACFD154737AE00BC356A /* Nes_Namco.cpp */; };
+		B936AD0A154737AE00BC356A /* Nes_Oscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936ACFF154737AE00BC356A /* Nes_Oscs.cpp */; };
+		B936AD0B154737AE00BC356A /* Nes_Vrc6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936AD01154737AE00BC356A /* Nes_Vrc6.cpp */; };
+		B936AD0C154737AE00BC356A /* Nonlinear_Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B936AD03154737AE00BC356A /* Nonlinear_Buffer.cpp */; };
+		B936AD0E154738BF00BC356A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B936AD0D154738BF00BC356A /* AudioToolbox.framework */; };
+		B9425D1D1607C66200A927B0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D1C1607C66200A927B0 /* Default.png */; };
+		B9425D1F1607C66700A927B0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D1E1607C66700A927B0 /* Default@2x.png */; };
+		B9425D211607C66D00A927B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D201607C66D00A927B0 /* Default-568h@2x.png */; };
+		B9425D231607C67A00A927B0 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D221607C67A00A927B0 /* Default-Portrait~ipad.png */; };
+		B9425D251607C67E00A927B0 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D241607C67E00A927B0 /* Default-Portrait@2x~ipad.png */; };
+		B9425D271607C68200A927B0 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D261607C68200A927B0 /* Default-Landscape~ipad.png */; };
+		B9425D291607C68400A927B0 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D281607C68400A927B0 /* Default-Landscape@2x~ipad.png */; };
+		B9425D361607C6E500A927B0 /* macifomlite_landscape_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2A1607C6E500A927B0 /* macifomlite_landscape_iPad.png */; };
+		B9425D371607C6E500A927B0 /* macifomlite_landscape_iPhone_5inRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2B1607C6E500A927B0 /* macifomlite_landscape_iPhone_5inRetina.png */; };
+		B9425D381607C6E500A927B0 /* macifomlite_landscape_iPhone_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2C1607C6E500A927B0 /* macifomlite_landscape_iPhone_Retina.png */; };
+		B9425D391607C6E500A927B0 /* macifomlite_landscape_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2D1607C6E500A927B0 /* macifomlite_landscape_iPhone.png */; };
+		B9425D3A1607C6E500A927B0 /* macifomlite_portrait_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2E1607C6E500A927B0 /* macifomlite_portrait_iPad.png */; };
+		B9425D3B1607C6E500A927B0 /* macifomlite_portrait_iPhone_5inRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D2F1607C6E500A927B0 /* macifomlite_portrait_iPhone_5inRetina.png */; };
+		B9425D3C1607C6E500A927B0 /* macifomlite_portrait_iPhone_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D301607C6E500A927B0 /* macifomlite_portrait_iPhone_Retina.png */; };
+		B9425D3D1607C6E500A927B0 /* macifomlite_portrait_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D311607C6E500A927B0 /* macifomlite_portrait_iPhone.png */; };
+		B9425D3E1607C6E500A927B0 /* macifomlite_tvoutLandscape_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D321607C6E500A927B0 /* macifomlite_tvoutLandscape_iPad.png */; };
+		B9425D3F1607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_5inRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D331607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_5inRetina.png */; };
+		B9425D401607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D341607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_Retina.png */; };
+		B9425D411607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = B9425D351607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone.png */; };
+		B962E39815ED409B0088ED5F /* NESControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B962E39315ED409B0088ED5F /* NESControllerViewController.m */; };
+		B962E39915ED409B0088ED5F /* NESControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B962E39415ED409B0088ED5F /* NESControllerViewController.xib */; };
+		B962E39A15ED409B0088ED5F /* NESControllerViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B962E39515ED409B0088ED5F /* NESControllerViewControlleriPad.xib */; };
+		B962E39B15ED409B0088ED5F /* NESExternalGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B962E39715ED409B0088ED5F /* NESExternalGLKViewController.m */; };
+		B962E39E15ED40F20088ED5F /* NESPlayfieldGLKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B962E39C15ED40F20088ED5F /* NESPlayfieldGLKViewController.xib */; };
+		B962E39F15ED40F20088ED5F /* NESPlayfieldGLKViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B962E39D15ED40F20088ED5F /* NESPlayfieldGLKViewControlleriPad.xib */; };
+		B962E3A115ED42130088ED5F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B962E3A015ED42130088ED5F /* Settings.bundle */; };
+		B962E3B315ED99190088ED5F /* macifomIcon_iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B962E3B215ED99190088ED5F /* macifomIcon_iPad.png */; };
+		B962E3B515ED993D0088ED5F /* macifomIcon_iPad_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = B962E3B415ED993D0088ED5F /* macifomIcon_iPad_Retina.png */; };
+		B962E3B715ED99430088ED5F /* macifomIcon_iPhone_Retina.png in Resources */ = {isa = PBXBuildFile; fileRef = B962E3B615ED99420088ED5F /* macifomIcon_iPhone_Retina.png */; };
+		B96949411248A06200CF9712 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96949401248A06200CF9712 /* QuartzCore.framework */; };
+		B96DD5571539016F00D3A9CC /* NESCartridgeEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5561539016F00D3A9CC /* NESCartridgeEmulator.m */; };
+		B96DD55A153901BD00D3A9CC /* NES6502Interpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD559153901BC00D3A9CC /* NES6502Interpreter.m */; };
+		B96DD5731539020100D3A9CC /* NESAxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD55C1539020100D3A9CC /* NESAxROMCartridge.m */; };
+		B96DD5741539020100D3A9CC /* NESCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD55E1539020100D3A9CC /* NESCartridge.m */; };
+		B96DD5751539020100D3A9CC /* NESCNROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5601539020100D3A9CC /* NESCNROMCartridge.m */; };
+		B96DD5761539020100D3A9CC /* NESiNES068Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5621539020100D3A9CC /* NESiNES068Cartridge.m */; };
+		B96DD5771539020100D3A9CC /* NESiNES184Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5641539020100D3A9CC /* NESiNES184Cartridge.m */; };
+		B96DD5781539020100D3A9CC /* NESSUROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5661539020100D3A9CC /* NESSUROMCartridge.m */; };
+		B96DD5791539020100D3A9CC /* NESSxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5681539020100D3A9CC /* NESSxROMCartridge.m */; };
+		B96DD57A1539020100D3A9CC /* NESTxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD56A1539020100D3A9CC /* NESTxROMCartridge.m */; };
+		B96DD57B1539020100D3A9CC /* NESUxROMCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD56C1539020100D3A9CC /* NESUxROMCartridge.m */; };
+		B96DD57C1539020100D3A9CC /* NESVRC1Cartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD56E1539020100D3A9CC /* NESVRC1Cartridge.m */; };
+		B96DD57D1539020100D3A9CC /* NESVRC2aCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5701539020100D3A9CC /* NESVRC2aCartridge.m */; };
+		B96DD57E1539020100D3A9CC /* NESVRC2bCartridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B96DD5721539020100D3A9CC /* NESVRC2bCartridge.m */; };
+		B96FBF0D1594DC3200B4295C /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = B96FBF0C1594DC3200B4295C /* MainWindow-iPad.xib */; };
+		B9725F55153954C8005A8FC8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9725F54153954C8005A8FC8 /* ImageIO.framework */; };
+		B978E7B91781EA37001E510D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B978E7B81781EA37001E510D /* CoreAudio.framework */; };
+		B983DC77124837440060812F /* NESAPUEmulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = B983DC5A124837430060812F /* NESAPUEmulator.mm */; };
+		B983DC7C124837440060812F /* NESControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = B983DC64124837440060812F /* NESControllerInterface.m */; };
+		B983DC80124837440060812F /* NESPPUEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B983DC6C124837440060812F /* NESPPUEmulator.m */; };
+		B9CC844215390770000C6723 /* NESROMListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CC844115390770000C6723 /* NESROMListController.m */; };
+		B9D7C5A0124A833300482989 /* macifomlite-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B9D7C59F124A833300482989 /* macifomlite-icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* macifomliteAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macifomliteAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* macifomliteAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = macifomliteAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* macifomlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macifomlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* macifomlite_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macifomlite_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* macifomlite-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "macifomlite-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		B91D39D912499D6D00EC0B6A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B91FA08C15B0C9DC000F9B17 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
+		B91FA08D15B0C9DC000F9B17 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
+		B91FA08E15B0C9DC000F9B17 /* iCadeState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
+		B925F84B1538CA57006148BC /* NESPlayfieldGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPlayfieldGLKViewController.h; sourceTree = "<group>"; };
+		B925F84C1538CA57006148BC /* NESPlayfieldGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPlayfieldGLKViewController.m; sourceTree = "<group>"; };
+		B925F8501538CFE5006148BC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B936ACEE154737AE00BC356A /* apu_snapshot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = apu_snapshot.cpp; sourceTree = "<group>"; };
+		B936ACEF154737AE00BC356A /* apu_snapshot.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = apu_snapshot.h; sourceTree = "<group>"; };
+		B936ACF0154737AE00BC356A /* blargg_common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = blargg_common.h; sourceTree = "<group>"; };
+		B936ACF1154737AE00BC356A /* blargg_source.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = blargg_source.h; sourceTree = "<group>"; };
+		B936ACF2154737AE00BC356A /* Blip_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Blip_Buffer.cpp; sourceTree = "<group>"; };
+		B936ACF3154737AE00BC356A /* Blip_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Blip_Buffer.h; sourceTree = "<group>"; };
+		B936ACF4154737AE00BC356A /* Blip_Synth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Blip_Synth.h; sourceTree = "<group>"; };
+		B936ACF6154737AE00BC356A /* config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = config.hpp; sourceTree = "<group>"; };
+		B936ACF7154737AE00BC356A /* cstdint.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cstdint.hpp; sourceTree = "<group>"; };
+		B936ACF8154737AE00BC356A /* static_assert.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = static_assert.hpp; sourceTree = "<group>"; };
+		B936ACF9154737AE00BC356A /* Multi_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Multi_Buffer.cpp; sourceTree = "<group>"; };
+		B936ACFA154737AE00BC356A /* Multi_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Multi_Buffer.h; sourceTree = "<group>"; };
+		B936ACFB154737AE00BC356A /* Nes_Apu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Apu.cpp; sourceTree = "<group>"; };
+		B936ACFC154737AE00BC356A /* Nes_Apu.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Apu.h; sourceTree = "<group>"; };
+		B936ACFD154737AE00BC356A /* Nes_Namco.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Namco.cpp; sourceTree = "<group>"; };
+		B936ACFE154737AE00BC356A /* Nes_Namco.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Namco.h; sourceTree = "<group>"; };
+		B936ACFF154737AE00BC356A /* Nes_Oscs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Oscs.cpp; sourceTree = "<group>"; };
+		B936AD00154737AE00BC356A /* Nes_Oscs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Oscs.h; sourceTree = "<group>"; };
+		B936AD01154737AE00BC356A /* Nes_Vrc6.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nes_Vrc6.cpp; sourceTree = "<group>"; };
+		B936AD02154737AE00BC356A /* Nes_Vrc6.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nes_Vrc6.h; sourceTree = "<group>"; };
+		B936AD03154737AE00BC356A /* Nonlinear_Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Nonlinear_Buffer.cpp; sourceTree = "<group>"; };
+		B936AD04154737AE00BC356A /* Nonlinear_Buffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Nonlinear_Buffer.h; sourceTree = "<group>"; };
+		B936AD0D154738BF00BC356A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B9425D1C1607C66200A927B0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B9425D1E1607C66700A927B0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B9425D201607C66D00A927B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B9425D221607C67A00A927B0 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		B9425D241607C67E00A927B0 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		B9425D261607C68200A927B0 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		B9425D281607C68400A927B0 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		B9425D2A1607C6E500A927B0 /* macifomlite_landscape_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_landscape_iPad.png; sourceTree = "<group>"; };
+		B9425D2B1607C6E500A927B0 /* macifomlite_landscape_iPhone_5inRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_landscape_iPhone_5inRetina.png; sourceTree = "<group>"; };
+		B9425D2C1607C6E500A927B0 /* macifomlite_landscape_iPhone_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_landscape_iPhone_Retina.png; sourceTree = "<group>"; };
+		B9425D2D1607C6E500A927B0 /* macifomlite_landscape_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_landscape_iPhone.png; sourceTree = "<group>"; };
+		B9425D2E1607C6E500A927B0 /* macifomlite_portrait_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_portrait_iPad.png; sourceTree = "<group>"; };
+		B9425D2F1607C6E500A927B0 /* macifomlite_portrait_iPhone_5inRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_portrait_iPhone_5inRetina.png; sourceTree = "<group>"; };
+		B9425D301607C6E500A927B0 /* macifomlite_portrait_iPhone_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_portrait_iPhone_Retina.png; sourceTree = "<group>"; };
+		B9425D311607C6E500A927B0 /* macifomlite_portrait_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_portrait_iPhone.png; sourceTree = "<group>"; };
+		B9425D321607C6E500A927B0 /* macifomlite_tvoutLandscape_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_tvoutLandscape_iPad.png; sourceTree = "<group>"; };
+		B9425D331607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_5inRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_tvoutLandscape_iPhone_5inRetina.png; sourceTree = "<group>"; };
+		B9425D341607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_tvoutLandscape_iPhone_Retina.png; sourceTree = "<group>"; };
+		B9425D351607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomlite_tvoutLandscape_iPhone.png; sourceTree = "<group>"; };
+		B962E39115ED409B0088ED5F /* macifomliteConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macifomliteConstants.h; sourceTree = "<group>"; };
+		B962E39215ED409B0088ED5F /* NESControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESControllerViewController.h; sourceTree = "<group>"; };
+		B962E39315ED409B0088ED5F /* NESControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESControllerViewController.m; sourceTree = "<group>"; };
+		B962E39415ED409B0088ED5F /* NESControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NESControllerViewController.xib; path = Classes/NESControllerViewController.xib; sourceTree = "<group>"; };
+		B962E39515ED409B0088ED5F /* NESControllerViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NESControllerViewControlleriPad.xib; path = Classes/NESControllerViewControlleriPad.xib; sourceTree = "<group>"; };
+		B962E39615ED409B0088ED5F /* NESExternalGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESExternalGLKViewController.h; sourceTree = "<group>"; };
+		B962E39715ED409B0088ED5F /* NESExternalGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESExternalGLKViewController.m; sourceTree = "<group>"; };
+		B962E39C15ED40F20088ED5F /* NESPlayfieldGLKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NESPlayfieldGLKViewController.xib; sourceTree = "<group>"; };
+		B962E39D15ED40F20088ED5F /* NESPlayfieldGLKViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NESPlayfieldGLKViewControlleriPad.xib; sourceTree = "<group>"; };
+		B962E3A015ED42130088ED5F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B962E3B215ED99190088ED5F /* macifomIcon_iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomIcon_iPad.png; sourceTree = "<group>"; };
+		B962E3B415ED993D0088ED5F /* macifomIcon_iPad_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomIcon_iPad_Retina.png; sourceTree = "<group>"; };
+		B962E3B615ED99420088ED5F /* macifomIcon_iPhone_Retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macifomIcon_iPhone_Retina.png; sourceTree = "<group>"; };
+		B96949401248A06200CF9712 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B96DD5551539016E00D3A9CC /* NESCartridgeEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCartridgeEmulator.h; sourceTree = "<group>"; };
+		B96DD5561539016F00D3A9CC /* NESCartridgeEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCartridgeEmulator.m; sourceTree = "<group>"; };
+		B96DD558153901BB00D3A9CC /* NES6502Interpreter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NES6502Interpreter.h; sourceTree = "<group>"; };
+		B96DD559153901BC00D3A9CC /* NES6502Interpreter.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NES6502Interpreter.m; sourceTree = "<group>"; };
+		B96DD55B1539020100D3A9CC /* NESAxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESAxROMCartridge.h; sourceTree = "<group>"; };
+		B96DD55C1539020100D3A9CC /* NESAxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESAxROMCartridge.m; sourceTree = "<group>"; };
+		B96DD55D1539020100D3A9CC /* NESCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCartridge.h; sourceTree = "<group>"; };
+		B96DD55E1539020100D3A9CC /* NESCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCartridge.m; sourceTree = "<group>"; };
+		B96DD55F1539020100D3A9CC /* NESCNROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESCNROMCartridge.h; sourceTree = "<group>"; };
+		B96DD5601539020100D3A9CC /* NESCNROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESCNROMCartridge.m; sourceTree = "<group>"; };
+		B96DD5611539020100D3A9CC /* NESiNES068Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESiNES068Cartridge.h; sourceTree = "<group>"; };
+		B96DD5621539020100D3A9CC /* NESiNES068Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESiNES068Cartridge.m; sourceTree = "<group>"; };
+		B96DD5631539020100D3A9CC /* NESiNES184Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESiNES184Cartridge.h; sourceTree = "<group>"; };
+		B96DD5641539020100D3A9CC /* NESiNES184Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESiNES184Cartridge.m; sourceTree = "<group>"; };
+		B96DD5651539020100D3A9CC /* NESSUROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSUROMCartridge.h; sourceTree = "<group>"; };
+		B96DD5661539020100D3A9CC /* NESSUROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSUROMCartridge.m; sourceTree = "<group>"; };
+		B96DD5671539020100D3A9CC /* NESSxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESSxROMCartridge.h; sourceTree = "<group>"; };
+		B96DD5681539020100D3A9CC /* NESSxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESSxROMCartridge.m; sourceTree = "<group>"; };
+		B96DD5691539020100D3A9CC /* NESTxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESTxROMCartridge.h; sourceTree = "<group>"; };
+		B96DD56A1539020100D3A9CC /* NESTxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESTxROMCartridge.m; sourceTree = "<group>"; };
+		B96DD56B1539020100D3A9CC /* NESUxROMCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESUxROMCartridge.h; sourceTree = "<group>"; };
+		B96DD56C1539020100D3A9CC /* NESUxROMCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESUxROMCartridge.m; sourceTree = "<group>"; };
+		B96DD56D1539020100D3A9CC /* NESVRC1Cartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC1Cartridge.h; sourceTree = "<group>"; };
+		B96DD56E1539020100D3A9CC /* NESVRC1Cartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC1Cartridge.m; sourceTree = "<group>"; };
+		B96DD56F1539020100D3A9CC /* NESVRC2aCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC2aCartridge.h; sourceTree = "<group>"; };
+		B96DD5701539020100D3A9CC /* NESVRC2aCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC2aCartridge.m; sourceTree = "<group>"; };
+		B96DD5711539020100D3A9CC /* NESVRC2bCartridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESVRC2bCartridge.h; sourceTree = "<group>"; };
+		B96DD5721539020100D3A9CC /* NESVRC2bCartridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESVRC2bCartridge.m; sourceTree = "<group>"; };
+		B96FBF0C1594DC3200B4295C /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		B9725F54153954C8005A8FC8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B978E7B81781EA37001E510D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B983DC59124837430060812F /* NESAPUEmulator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NESAPUEmulator.h; sourceTree = "<group>"; };
+		B983DC5A124837430060812F /* NESAPUEmulator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NESAPUEmulator.mm; sourceTree = "<group>"; };
+		B983DC63124837440060812F /* NESControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESControllerInterface.h; sourceTree = "<group>"; };
+		B983DC64124837440060812F /* NESControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESControllerInterface.m; sourceTree = "<group>"; };
+		B983DC6B124837440060812F /* NESPPUEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESPPUEmulator.h; sourceTree = "<group>"; };
+		B983DC6C124837440060812F /* NESPPUEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESPPUEmulator.m; sourceTree = "<group>"; };
+		B9CC844015390770000C6723 /* NESROMListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESROMListController.h; sourceTree = "<group>"; };
+		B9CC844115390770000C6723 /* NESROMListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESROMListController.m; sourceTree = "<group>"; };
+		B9D7C59F124A833300482989 /* macifomlite-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "macifomlite-icon.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B978E7B91781EA37001E510D /* CoreAudio.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				B96949411248A06200CF9712 /* QuartzCore.framework in Frameworks */,
+				B9725F55153954C8005A8FC8 /* ImageIO.framework in Frameworks */,
+				B936AD0E154738BF00BC356A /* AudioToolbox.framework in Frameworks */,
+				B91D39DA12499D6D00EC0B6A /* OpenGLES.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				B925F8511538CFE5006148BC /* GLKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B962E39115ED409B0088ED5F /* macifomliteConstants.h */,
+				B962E39215ED409B0088ED5F /* NESControllerViewController.h */,
+				B962E39315ED409B0088ED5F /* NESControllerViewController.m */,
+				B962E39615ED409B0088ED5F /* NESExternalGLKViewController.h */,
+				B962E39715ED409B0088ED5F /* NESExternalGLKViewController.m */,
+				B983DC92124837BE0060812F /* Cartridges */,
+				B96DD558153901BB00D3A9CC /* NES6502Interpreter.h */,
+				B96DD559153901BC00D3A9CC /* NES6502Interpreter.m */,
+				B96DD5551539016E00D3A9CC /* NESCartridgeEmulator.h */,
+				B96DD5561539016F00D3A9CC /* NESCartridgeEmulator.m */,
+				B983DC59124837430060812F /* NESAPUEmulator.h */,
+				B983DC5A124837430060812F /* NESAPUEmulator.mm */,
+				B983DC63124837440060812F /* NESControllerInterface.h */,
+				B983DC64124837440060812F /* NESControllerInterface.m */,
+				B983DC6B124837440060812F /* NESPPUEmulator.h */,
+				B983DC6C124837440060812F /* NESPPUEmulator.m */,
+				1D3623240D0F684500981E51 /* macifomliteAppDelegate.h */,
+				1D3623250D0F684500981E51 /* macifomliteAppDelegate.m */,
+				B925F84B1538CA57006148BC /* NESPlayfieldGLKViewController.h */,
+				B925F84C1538CA57006148BC /* NESPlayfieldGLKViewController.m */,
+				B9CC844015390770000C6723 /* NESROMListController.h */,
+				B9CC844115390770000C6723 /* NESROMListController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* macifomlite.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B978E7B81781EA37001E510D /* CoreAudio.framework */,
+				B9425D281607C68400A927B0 /* Default-Landscape@2x~ipad.png */,
+				B9425D261607C68200A927B0 /* Default-Landscape~ipad.png */,
+				B9425D241607C67E00A927B0 /* Default-Portrait@2x~ipad.png */,
+				B9425D221607C67A00A927B0 /* Default-Portrait~ipad.png */,
+				B9425D201607C66D00A927B0 /* Default-568h@2x.png */,
+				B9425D1E1607C66700A927B0 /* Default@2x.png */,
+				B9425D1C1607C66200A927B0 /* Default.png */,
+				B962E3B615ED99420088ED5F /* macifomIcon_iPhone_Retina.png */,
+				B962E3B415ED993D0088ED5F /* macifomIcon_iPad_Retina.png */,
+				B962E3B215ED99190088ED5F /* macifomIcon_iPad.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				B96FBF0B1594DC3200B4295C /* iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B91FA08B15B0C9C2000F9B17 /* iCade */,
+				B936ACED154737AE00BC356A /* nes_apu */,
+				32CA4F630368D1EE00C91783 /* macifomlite_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9425D2A1607C6E500A927B0 /* macifomlite_landscape_iPad.png */,
+				B9425D2B1607C6E500A927B0 /* macifomlite_landscape_iPhone_5inRetina.png */,
+				B9425D2C1607C6E500A927B0 /* macifomlite_landscape_iPhone_Retina.png */,
+				B9425D2D1607C6E500A927B0 /* macifomlite_landscape_iPhone.png */,
+				B9425D2E1607C6E500A927B0 /* macifomlite_portrait_iPad.png */,
+				B9425D2F1607C6E500A927B0 /* macifomlite_portrait_iPhone_5inRetina.png */,
+				B9425D301607C6E500A927B0 /* macifomlite_portrait_iPhone_Retina.png */,
+				B9425D311607C6E500A927B0 /* macifomlite_portrait_iPhone.png */,
+				B9425D321607C6E500A927B0 /* macifomlite_tvoutLandscape_iPad.png */,
+				B9425D331607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_5inRetina.png */,
+				B9425D341607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_Retina.png */,
+				B9425D351607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone.png */,
+				B962E3A015ED42130088ED5F /* Settings.bundle */,
+				B962E39C15ED40F20088ED5F /* NESPlayfieldGLKViewController.xib */,
+				B962E39415ED409B0088ED5F /* NESControllerViewController.xib */,
+				B9D7C59F124A833300482989 /* macifomlite-icon.png */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* macifomlite-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B936AD0D154738BF00BC356A /* AudioToolbox.framework */,
+				B9725F54153954C8005A8FC8 /* ImageIO.framework */,
+				B925F8501538CFE5006148BC /* GLKit.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				B96949401248A06200CF9712 /* QuartzCore.framework */,
+				B91D39D912499D6D00EC0B6A /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B91FA08B15B0C9C2000F9B17 /* iCade */ = {
+			isa = PBXGroup;
+			children = (
+				B91FA08C15B0C9DC000F9B17 /* iCadeReaderView.h */,
+				B91FA08D15B0C9DC000F9B17 /* iCadeReaderView.m */,
+				B91FA08E15B0C9DC000F9B17 /* iCadeState.h */,
+			);
+			name = iCade;
+			sourceTree = "<group>";
+		};
+		B936ACED154737AE00BC356A /* nes_apu */ = {
+			isa = PBXGroup;
+			children = (
+				B936ACEE154737AE00BC356A /* apu_snapshot.cpp */,
+				B936ACEF154737AE00BC356A /* apu_snapshot.h */,
+				B936ACF0154737AE00BC356A /* blargg_common.h */,
+				B936ACF1154737AE00BC356A /* blargg_source.h */,
+				B936ACF2154737AE00BC356A /* Blip_Buffer.cpp */,
+				B936ACF3154737AE00BC356A /* Blip_Buffer.h */,
+				B936ACF4154737AE00BC356A /* Blip_Synth.h */,
+				B936ACF5154737AE00BC356A /* boost */,
+				B936ACF9154737AE00BC356A /* Multi_Buffer.cpp */,
+				B936ACFA154737AE00BC356A /* Multi_Buffer.h */,
+				B936ACFB154737AE00BC356A /* Nes_Apu.cpp */,
+				B936ACFC154737AE00BC356A /* Nes_Apu.h */,
+				B936ACFD154737AE00BC356A /* Nes_Namco.cpp */,
+				B936ACFE154737AE00BC356A /* Nes_Namco.h */,
+				B936ACFF154737AE00BC356A /* Nes_Oscs.cpp */,
+				B936AD00154737AE00BC356A /* Nes_Oscs.h */,
+				B936AD01154737AE00BC356A /* Nes_Vrc6.cpp */,
+				B936AD02154737AE00BC356A /* Nes_Vrc6.h */,
+				B936AD03154737AE00BC356A /* Nonlinear_Buffer.cpp */,
+				B936AD04154737AE00BC356A /* Nonlinear_Buffer.h */,
+			);
+			path = nes_apu;
+			sourceTree = "<group>";
+		};
+		B936ACF5154737AE00BC356A /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				B936ACF6154737AE00BC356A /* config.hpp */,
+				B936ACF7154737AE00BC356A /* cstdint.hpp */,
+				B936ACF8154737AE00BC356A /* static_assert.hpp */,
+			);
+			path = boost;
+			sourceTree = "<group>";
+		};
+		B96FBF0B1594DC3200B4295C /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				B962E39D15ED40F20088ED5F /* NESPlayfieldGLKViewControlleriPad.xib */,
+				B962E39515ED409B0088ED5F /* NESControllerViewControlleriPad.xib */,
+				B96FBF0C1594DC3200B4295C /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		B983DC92124837BE0060812F /* Cartridges */ = {
+			isa = PBXGroup;
+			children = (
+				B96DD55B1539020100D3A9CC /* NESAxROMCartridge.h */,
+				B96DD55C1539020100D3A9CC /* NESAxROMCartridge.m */,
+				B96DD55D1539020100D3A9CC /* NESCartridge.h */,
+				B96DD55E1539020100D3A9CC /* NESCartridge.m */,
+				B96DD55F1539020100D3A9CC /* NESCNROMCartridge.h */,
+				B96DD5601539020100D3A9CC /* NESCNROMCartridge.m */,
+				B96DD5611539020100D3A9CC /* NESiNES068Cartridge.h */,
+				B96DD5621539020100D3A9CC /* NESiNES068Cartridge.m */,
+				B96DD5631539020100D3A9CC /* NESiNES184Cartridge.h */,
+				B96DD5641539020100D3A9CC /* NESiNES184Cartridge.m */,
+				B96DD5651539020100D3A9CC /* NESSUROMCartridge.h */,
+				B96DD5661539020100D3A9CC /* NESSUROMCartridge.m */,
+				B96DD5671539020100D3A9CC /* NESSxROMCartridge.h */,
+				B96DD5681539020100D3A9CC /* NESSxROMCartridge.m */,
+				B96DD5691539020100D3A9CC /* NESTxROMCartridge.h */,
+				B96DD56A1539020100D3A9CC /* NESTxROMCartridge.m */,
+				B96DD56B1539020100D3A9CC /* NESUxROMCartridge.h */,
+				B96DD56C1539020100D3A9CC /* NESUxROMCartridge.m */,
+				B96DD56D1539020100D3A9CC /* NESVRC1Cartridge.h */,
+				B96DD56E1539020100D3A9CC /* NESVRC1Cartridge.m */,
+				B96DD56F1539020100D3A9CC /* NESVRC2aCartridge.h */,
+				B96DD5701539020100D3A9CC /* NESVRC2aCartridge.m */,
+				B96DD5711539020100D3A9CC /* NESVRC2bCartridge.h */,
+				B96DD5721539020100D3A9CC /* NESVRC2bCartridge.m */,
+			);
+			name = Cartridges;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* macifomlite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "macifomlite" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macifomlite;
+			productName = macifomlite;
+			productReference = 1D6058910D05DD3D006BFB54 /* macifomlite.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "macifomlite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* macifomlite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				B9D7C5A0124A833300482989 /* macifomlite-icon.png in Resources */,
+				B96FBF0D1594DC3200B4295C /* MainWindow-iPad.xib in Resources */,
+				B962E39915ED409B0088ED5F /* NESControllerViewController.xib in Resources */,
+				B962E39A15ED409B0088ED5F /* NESControllerViewControlleriPad.xib in Resources */,
+				B962E39E15ED40F20088ED5F /* NESPlayfieldGLKViewController.xib in Resources */,
+				B962E39F15ED40F20088ED5F /* NESPlayfieldGLKViewControlleriPad.xib in Resources */,
+				B962E3A115ED42130088ED5F /* Settings.bundle in Resources */,
+				B962E3B315ED99190088ED5F /* macifomIcon_iPad.png in Resources */,
+				B962E3B515ED993D0088ED5F /* macifomIcon_iPad_Retina.png in Resources */,
+				B962E3B715ED99430088ED5F /* macifomIcon_iPhone_Retina.png in Resources */,
+				B9425D1D1607C66200A927B0 /* Default.png in Resources */,
+				B9425D1F1607C66700A927B0 /* Default@2x.png in Resources */,
+				B9425D211607C66D00A927B0 /* Default-568h@2x.png in Resources */,
+				B9425D231607C67A00A927B0 /* Default-Portrait~ipad.png in Resources */,
+				B9425D251607C67E00A927B0 /* Default-Portrait@2x~ipad.png in Resources */,
+				B9425D271607C68200A927B0 /* Default-Landscape~ipad.png in Resources */,
+				B9425D291607C68400A927B0 /* Default-Landscape@2x~ipad.png in Resources */,
+				B9425D361607C6E500A927B0 /* macifomlite_landscape_iPad.png in Resources */,
+				B9425D371607C6E500A927B0 /* macifomlite_landscape_iPhone_5inRetina.png in Resources */,
+				B9425D381607C6E500A927B0 /* macifomlite_landscape_iPhone_Retina.png in Resources */,
+				B9425D391607C6E500A927B0 /* macifomlite_landscape_iPhone.png in Resources */,
+				B9425D3A1607C6E500A927B0 /* macifomlite_portrait_iPad.png in Resources */,
+				B9425D3B1607C6E500A927B0 /* macifomlite_portrait_iPhone_5inRetina.png in Resources */,
+				B9425D3C1607C6E500A927B0 /* macifomlite_portrait_iPhone_Retina.png in Resources */,
+				B9425D3D1607C6E500A927B0 /* macifomlite_portrait_iPhone.png in Resources */,
+				B9425D3E1607C6E500A927B0 /* macifomlite_tvoutLandscape_iPad.png in Resources */,
+				B9425D3F1607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_5inRetina.png in Resources */,
+				B9425D401607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone_Retina.png in Resources */,
+				B9425D411607C6E500A927B0 /* macifomlite_tvoutLandscape_iPhone.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* macifomliteAppDelegate.m in Sources */,
+				B983DC77124837440060812F /* NESAPUEmulator.mm in Sources */,
+				B983DC7C124837440060812F /* NESControllerInterface.m in Sources */,
+				B983DC80124837440060812F /* NESPPUEmulator.m in Sources */,
+				B925F84E1538CA57006148BC /* NESPlayfieldGLKViewController.m in Sources */,
+				B96DD5571539016F00D3A9CC /* NESCartridgeEmulator.m in Sources */,
+				B96DD55A153901BD00D3A9CC /* NES6502Interpreter.m in Sources */,
+				B96DD5731539020100D3A9CC /* NESAxROMCartridge.m in Sources */,
+				B96DD5741539020100D3A9CC /* NESCartridge.m in Sources */,
+				B96DD5751539020100D3A9CC /* NESCNROMCartridge.m in Sources */,
+				B96DD5761539020100D3A9CC /* NESiNES068Cartridge.m in Sources */,
+				B96DD5771539020100D3A9CC /* NESiNES184Cartridge.m in Sources */,
+				B96DD5781539020100D3A9CC /* NESSUROMCartridge.m in Sources */,
+				B96DD5791539020100D3A9CC /* NESSxROMCartridge.m in Sources */,
+				B96DD57A1539020100D3A9CC /* NESTxROMCartridge.m in Sources */,
+				B96DD57B1539020100D3A9CC /* NESUxROMCartridge.m in Sources */,
+				B96DD57C1539020100D3A9CC /* NESVRC1Cartridge.m in Sources */,
+				B96DD57D1539020100D3A9CC /* NESVRC2aCartridge.m in Sources */,
+				B96DD57E1539020100D3A9CC /* NESVRC2bCartridge.m in Sources */,
+				B9CC844215390770000C6723 /* NESROMListController.m in Sources */,
+				B936AD05154737AE00BC356A /* apu_snapshot.cpp in Sources */,
+				B936AD06154737AE00BC356A /* Blip_Buffer.cpp in Sources */,
+				B936AD07154737AE00BC356A /* Multi_Buffer.cpp in Sources */,
+				B936AD08154737AE00BC356A /* Nes_Apu.cpp in Sources */,
+				B936AD09154737AE00BC356A /* Nes_Namco.cpp in Sources */,
+				B936AD0A154737AE00BC356A /* Nes_Oscs.cpp in Sources */,
+				B936AD0B154737AE00BC356A /* Nes_Vrc6.cpp in Sources */,
+				B936AD0C154737AE00BC356A /* Nonlinear_Buffer.cpp in Sources */,
+				B91FA08F15B0C9DC000F9B17 /* iCadeReaderView.m in Sources */,
+				B962E39815ED409B0088ED5F /* NESControllerViewController.m in Sources */,
+				B962E39B15ED409B0088ED5F /* NESExternalGLKViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = macifomlite_Prefix.pch;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "macifomlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LLVM_LTO = NO;
+				PRODUCT_NAME = macifomlite;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = macifomlite_Prefix.pch;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "macifomlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LLVM_LTO = NO;
+				PRODUCT_NAME = macifomlite;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9CC844915390E23000C6723 /* Performance Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = "Performance Debug";
+		};
+		B9CC844A15390E23000C6723 /* Performance Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = macifomlite_Prefix.pch;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "macifomlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LLVM_LTO = NO;
+				PRODUCT_NAME = macifomlite;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Performance Debug";
+		};
+		B9F9293D124D2C74008F4A4E /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Entitlements-ah.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = "Ad Hoc";
+		};
+		B9F9293E124D2C74008F4A4E /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = macifomlite_Prefix.pch;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "macifomlite-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LLVM_LTO = NO;
+				PRODUCT_NAME = macifomlite;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "macifomlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				B9CC844A15390E23000C6723 /* Performance Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				B9F9293E124D2C74008F4A4E /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "macifomlite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				B9CC844915390E23000C6723 /* Performance Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				B9F9293D124D2C74008F4A4E /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
